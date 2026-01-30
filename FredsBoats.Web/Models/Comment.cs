@@ -21,9 +21,6 @@ namespace FredsBoats.Web.Models
         [Column("createdat")]
         public DateTime Createdat { get; set; }
 
-        [Column("daily_rate")]
-        public float DailyRate { get; set; }
-
         // Foreign Keys
         [Column("fkcategoryid")]
         public int CategoryId { get; set; }
