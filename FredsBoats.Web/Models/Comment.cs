@@ -8,7 +8,7 @@ namespace FredsBoats.Web.Models
     {
         [Key]
         [Column("commentid")]
-        public int BoatId { get; set; }
+        public int CommentId { get; set; }
 
         [Column("content")]
         [StringLength(50)]
