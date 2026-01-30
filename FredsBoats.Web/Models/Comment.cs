@@ -25,13 +25,10 @@ namespace FredsBoats.Web.Models
         [Column("fkcategoryid")]
         public int CategoryId { get; set; }
         
-        [ForeignKey("BoatId")]
-        public Boat? Boat { get; set; }
-
         [Column("fkboatid")]
         public int BoatId { get; set; }
 
-        // Navigation for Boat
-        public ICollection<Boat> Boat { get; set; } = new List<Boat>();
+        [ForeignKey("BoatId")]
+        public Boat? Boat { get; set; }
     }
 }
